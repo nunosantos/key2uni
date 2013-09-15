@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "About us";
+}
+
+@section navigation
+{
+    <ul class="logo col-md-2"><img src="~/Images/LOGO YELLOW_clipped_rev_1.png" width="150px" height="35px" alt=""></ul>
+                    <ul class="nav navbar-nav col-md-9">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="active">@Html.ActionLink("About us", "Index", "AboutUs")</li>
+                        <li>@Html.ActionLink("Services", "Index", "Services")</li>
+                        <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    </ul>
+}
+
+@section featured
+{
+    <div class="fundo container">
+    <h2 class="page-header">@ViewBag.Title <small class="headerAboutus pull-right">We help you get to a better future.</small></h2>
+        <div class="contactJumbo"></div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-11">
+                    <h3>KEY2UNI, the key to your university education.</h3>
+                    <blockquote>
+                        We are a professional organisation helping individuals get their dream career through higher education. KEY2UNI assists students in the choice of an appropriate course and university for undergraduate, postgraduate and short courses. We are here to help you through the journey and make sure the process is as easy and smooth as possible. KEY2UNI also assists with public and private funding to help you financially as much as possible.
+                    </blockquote>
+                    <h3>What we have to offer</h3>
+                    <blockquote>
+                        Are you eager to get started on your university education? Or maybe you’re looking to change direction in your career through a postgraduate course? We at KEY2UNI provide all the help you need with getting things moving. Help with all applications, university communication and funding is what we’re all about. Professional, friendly and knowledgeable advice from consultants who can lift the burden off your shoulders and see you on your way to a better future. Get in touch now for a no obligation chat and see how we can help you start!
+
+Courses available for October 2013, February 2014, June 2014 and more.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                Testimonials
+            </div>
+        </div>
+
+
+</div>
+}
+

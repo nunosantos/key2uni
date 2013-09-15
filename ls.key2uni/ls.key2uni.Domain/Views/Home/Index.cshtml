@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@section navigation
+{
+    <ul class="logo col-md-2"><img src="~/Images/LOGO YELLOW_clipped_rev_1.png" width="150px" height="35px" alt=""></ul>
+                    <ul class="nav navbar-nav col-md-9">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About us", "Index", "AboutUs")</li>
+                        <li>@Html.ActionLink("Services", "Index", "Services")</li>
+                        <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    </ul>
+}
+
+@section featured {
+    <div class="fundo container">
+        <h2 class="page-header">@ViewBag.Title <small class="headerAboutus pull-right">The key to your university education.</small></h2>  
+        <div class="jumbotron">
+            <h1 class="text-center"></h1>
+            <p class="text-center">
+            </p>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <h2>Career Choice.
+                </h2>
+                <p>We can help you find the career of your dreams. Whether you’re creative, analytical or not really sure, we’re here to guide you in the right direction.</p>
+                <p><a class="btn btn-default" href="~/Aboutus">More >></a></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>How can we help you?</h2>
+                <p>Advice on future prospects, application assistance and help from start to finish is what we’re here for. Find out about the services we offer</p>
+                <p><a class="btn btn-default" href="~/Services">More >></a></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Get In Touch!</h2>
+                <p>Contact us now for a no obligation chat with one of our consultants and see yourself on your way to a great future!</p>
+                <p><a class="btn btn-default" href="~/Contact">More >></a></p>
+            </div>
+        </div>
+    </div>  
+}
+

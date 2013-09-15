@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>KEY2UNI | @ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="container">
+                        @RenderSection("navigation", required: true)
+                       <a class="imageNav col-sm-1" href="https://www.facebook.com/KEY2UNI"><img src="~/Images/facebook.png" width="30px" height="30px" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+                
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="fundo content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer class="myFooter">
+            <div class="content-wrapper">
+                <div class="text-center">
+                    <p id="footerP">&copy; @DateTime.Now.Year - KEY2UNI All rights reserved - Developed by <a href="http://www.nuno-santos.co.uk">Nuno Santos</a></p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

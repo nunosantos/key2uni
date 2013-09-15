@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+@section featured
+{
+    <div class="fundo container">
+    <h2 class="page-header">@ViewBag.Title <small class="pull-right">We will be in touch with you shortly</small></h2>
+    <div class="container">
+        <form action="MAILTO:info@key2uni.com" method="POST" enctype="text/plain" class="form-horizontal container" role="form">
+            <div class="form-group">
+                <label for="inputEmail1" class="col-lg-2 control-label">First Name</label>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" name="Your name is" placeholder="Your First Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword1" class="col-lg-2 control-label">Last Name</label>
+                <div class="col-lg-5">
+                    <input type="text" name="Your Last name is" class="form-control" placeholder="Your Last Name">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputemail1" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-5">
+                    <input type="email" name="Your email is" class="form-control" id="inputemail1" placeholder="Your e-mail address">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="inputemail2" class="col-lg-2 control-label">Subject</label>
+                <div class="col-lg-5">
+                    <textarea name="Subject" class="form-control" rows="7" placeholder="Your message here"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+        
+}
+
