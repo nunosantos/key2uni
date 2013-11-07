@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -117,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
@@ -128,8 +130,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ls.key2uni.Domain\ls.key2uni.Domain.csproj">
-      <Project>{0B9138E5-0573-472C-B580-38A48A922BFC}</Project>
+      <Project>{0b9138e5-0573-472c-b580-38a48a922bfc}</Project>
       <Name>ls.key2uni.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ls.key2uni.Entities\ls.key2uni.Entities.csproj">
+      <Project>{faae1e89-5bb3-4fc0-a224-3511f4047698}</Project>
+      <Name>ls.key2uni.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

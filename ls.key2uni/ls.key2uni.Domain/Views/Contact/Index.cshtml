@@ -1,5 +1,18 @@
-﻿@{
+﻿@model ls.key2uni.Domain.Models.ContactResponseModel
+
+@{
     ViewBag.Title = "Contact";
+}
+
+@section navigation
+{
+    <ul class="logo col-md-2"><img src="~/Images/LOGO YELLOW_clipped_rev_1.png" width="150px" height="35px" alt=""></ul>
+                    <ul class="nav navbar-nav col-md-9">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About us", "Index", "AboutUs")</li>
+                        <li>@Html.ActionLink("Services", "Index", "Services")</li>
+                        <li class="active">@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    </ul>
 }
 
 @section featured
@@ -41,9 +54,16 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </div>
             </div>
-
-
         </form>
+        @using(Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <p>Your First Name: @Html.TextBoxFor(x => x.FirstName)</p>
+            <p>Your Last Name: @Html.TextBoxFor(x => x.Surname)</p>
+            <p>Your Email Address: @Html.TextBoxFor(x => x.Email)</p>
+            <p>Your subject is: @Html.TextBoxFor(x => x.Subject)</p>
+            <input type="submit" value="Submit" class="btn btn-default" />
+        }
     </div>
         
 }

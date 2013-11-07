@@ -2,6 +2,17 @@
     ViewBag.Title = "Services";
 }
 
+@section navigation
+{
+    <ul class="logo col-md-2"><img src="~/Images/LOGO YELLOW_clipped_rev_1.png" width="150px" height="35px" alt=""></ul>
+                    <ul class="nav navbar-nav col-md-9">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About us", "Index", "AboutUs")</li>
+                        <li class="active">@Html.ActionLink("Services", "Index", "Services")</li>
+                        <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                    </ul>
+}
+
 @section featured
 {
     <div class="fundo container">
